@@ -7,3 +7,11 @@ const renderAllHTML = () => {
 }
 
 renderAllHTML()
+
+document.addEventListener(
+    "stateChanged",
+    (event) => {
+        console.log("State Change Alpha Team Force GOOOO!!!")
+        renderAllHTML()
+    }
+)
